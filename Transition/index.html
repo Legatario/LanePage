@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="container">
-            <nav class="header">
+            <nav class="header" id="nav">
                 <div class="img">
                     <a href="#">
                         <img src="./img/alvo.png" alt="logo">
@@ -21,7 +21,10 @@
                     </a>
                 </div>
 
-                <ul>
+                <button id="btnMenu">Menu
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu">
                     <li><a href="#top" style="font-weight: bold;">Inicio</a></li>
                     <li><a href="#local">Localização</a></li>
                     <li><a href="#server">Serviços</a></li>
@@ -222,5 +225,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>

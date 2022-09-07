@@ -54,6 +54,11 @@ footer .img img{
     font-family: Montserrat;
     font-weight: 400;
     line-height: 17px;
+    padding: 1rem;
+}
+
+#menu li a:hover{
+    background: rgba(0,0,0,0.05);
 }
 
 .header span,
@@ -288,3 +293,78 @@ footer{
     z-index: -5;
 }
 
+#btnMenu{
+    display: none;
+}
+
+@media (max-width: 800px){
+    #menu{
+        display: block;
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 150px;
+        right: 0px;
+        z-index: 100;
+        transition: .2s;
+        overflow-y: hidden;
+    }
+    #menu li{ 
+        padding: 0;
+    }
+    #menu a{
+        border-bottom: 1px solid #333;
+        display: block;
+        padding: .7rem;
+        margin: 0rem 3rem 0rem 2.5rem;
+        
+    }
+    .container{
+        margin: 0 30px;
+    }
+
+    #nav.active #menu{
+        display: block;
+    }
+
+    #btnMenu{
+        color:#1A1A1A;
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburger{
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
