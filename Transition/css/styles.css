@@ -45,6 +45,14 @@ footer .img img{
     padding-left: 7em;
 }
 
+@media(max-width:1400px){
+    .header ul li{
+        list-style: none;
+        padding-left: 0em;
+    }
+
+}
+
 .header a,
 .footer a,
 .footer p{
@@ -54,7 +62,7 @@ footer .img img{
     font-family: Montserrat;
     font-weight: 400;
     line-height: 17px;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 #menu li a:hover{
@@ -95,19 +103,21 @@ footer{
 }
 
 .barrel img{
-    width: 65%;
+    width: 50%;
+    height: auto;
     max-height: 842.68px;
     max-width: 1000px;
 }
 
+
 .notification{
-    width: 35%;
+    width: 37%;
     padding-right: 100px;
 }
 
 .notification h1{
     margin-top: 1em;
-    font-size: 64px;
+    font-size: 3.3vw;
     font-family: Montserrat;
     font-weight: 700;
     line-height: 78px;
@@ -116,7 +126,7 @@ footer{
 }
 
 .notification p{
-    font-size: 30px;
+    font-size: 1.5vw;
     font-family: Montserrat;
     font-weight: 400;
     line-height: 43px;
@@ -125,7 +135,7 @@ footer{
 }
 
 .notification button{
-    font-size: 24px;
+    font-size: 1.25vw;
     font-family: Montserrat;
     font-weight: 600;
     line-height: 30px;
@@ -142,7 +152,7 @@ footer{
 }
 
 .location h2, .info h2, .seg h2{
-    font-size: 48px;
+    font-size: 3vw;
     font-family: Montserrat;
     font-weight: 700;
     line-height: 59px;
@@ -151,7 +161,7 @@ footer{
 }
 
 .location p, .info p, .seg p{
-    font-size: 30px;
+    font-size: 1.5vw;
     font-family: Montserrat;
     font-weight: 400;
     line-height: 44px;
@@ -296,18 +306,58 @@ footer{
 #btnMenu{
     display: none;
 }
+@media(max-width:1100px){
+    .containerSegmento{
+        grid-template-columns: 1fr 1fr;
+        margin: 77px 30px 230px 30px;   
+    }
+    .notification h1{
+        font-size: 9vw;
+    }
+    .notification p, .location p, .info p, .seg p{
+        font-size: 4vw;
+    }
+    .notification button{
+        font-size: 3vw;
+    }
+    .location h2, .info h2, .seg h2{
+        font-size: 8vw;
+    }
 
-@media (max-width: 800px){
+}
+
+@media(max-width:1050px){
+    .barrel{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column
+    }
+    .barrel img{
+        width: 100%;
+        height: auto;
+        max-height: 842.68px;
+        max-width: 1000px;
+    }
+    .notification{
+        width: 50%;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 917px){
     #menu{
         display: block;
         display: none;
         position: absolute;
         width: 100%;
-        top: 150px;
+        top: 170px;
         right: 0px;
         z-index: 100;
         transition: .2s;
         overflow-y: hidden;
+        background: #E5E5E5;
+        padding-bottom: 1em;
     }
     #menu li{ 
         padding: 0;
@@ -366,5 +416,95 @@ footer{
     #nav.active #hamburger::after{
         transform: rotate(-135deg);
         top: -7px;
+    }
+}
+
+@media (max-width: 800px){
+    .containerSegmento{
+        grid-template-columns: 1fr;
+        margin: 77px 100px 230px 100px;
+        
+    }
+}
+
+@media (max-width: 500px){
+    .containerSegmento{
+        grid-template-columns: 1fr;
+        margin: 77px 30px 230px 30px;
+        
+    }
+    .footer{
+        display: block;
+    }
+}
+
+
+.maps{
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    max-width: 600px;
+    max-height: 500px;
+}
+
+.mapouter iframe{
+    min-width: 600px; 
+    min-height: 500px;
+}
+
+
+.maps::-webkit-scrollbar { 
+	display: none;
+}
+
+@media(prefers-color-scheme: dark){
+    body{
+        background-color: #333;
+    }
+
+    header, .header #menu{
+        background-color: black;
+    }
+    .header span, .header a, .header #btnMenu{
+        color: #fff;
+    }
+    #menu a{
+        border-color: #E5E5E5;
+    }
+    .notification h1{
+        color: #fff
+    }
+    .notification p, .location p, .info p, .seg p{
+        color: aliceblue;
+    }
+    .notification button{
+        color: #0074FF;
+        background-color: #1A1A1A;
+        border-color: aliceblue;
+    }
+    .notification button:hover{
+        background: rgba(0,0,0,0.05);
+    }
+    .location h2, .info h2, .seg h2{
+        color: #fff;
+    }
+
+    .underline{
+        background-color: #fff;
+    }
+    .circle1{
+        background-color:  #0074FF;
+    }
+
+    .cardImg .img{
+        filter: invert(100%)
+    }
+
+    .cardSegmento .text h3{
+        color: #fff;
+        font-weight: bold;
+    }
+    .cardSegmento .text p{
+        color: aliceblue;
     }
 }
