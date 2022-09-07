@@ -7,6 +7,7 @@ body{
     background-color: #E5E5E5;
     font-family: Arial, Helvetica, sans-serif;
     font-family: Montserrat;
+    overflow-x: hidden;
 }
 
 .container{
@@ -60,6 +61,13 @@ footer .img img{
     font-size: 35px;
     font-weight: bold;
 }
+/* header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background:  #E5E5E5;
+    z-index: 1000;
+} */
 
 footer{
     background: #1A1A1A;
@@ -200,11 +208,19 @@ footer{
     font-size: 14px;
 }
 
+.blueCard .number{
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 13px;
+}
+
+
 .containerSegmento{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 80px 100px;
     margin: 77px 100px 230px 100px;
+    
 }
 
 .cardSegmento{
@@ -247,3 +263,28 @@ footer{
     color: #595959;
     padding-top: 15px;
 }
+
+.circle1{
+    width: 673px;
+    height: 673px;
+    background: rgba(0, 116, 255, 0.2);
+    position: absolute;
+    border-radius: 50%;
+    left: 0px;
+    overflow-x: hidden;
+    margin-left: -202px;
+    z-index: -5;
+}
+
+.circle2{
+    width: 673px;
+    height: 673px;
+    border: 5px solid #0074FF;
+    position: absolute;
+    border-radius: 50%;
+    right: 0px;
+    overflow-x: hidden;
+    margin-right: -178px;
+    z-index: -5;
+}
+
