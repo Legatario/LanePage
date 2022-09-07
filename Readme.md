@@ -5,8 +5,8 @@
 
 <P align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=GREEN&style=for-the-badge" />
+
+<img  margin-left="15px" src="http://img.shields.io/static/v1?label=realize%20data&message=Setember&color=YELLOW&style=for-the-badge" />
 </P>
 
-<P align="center" margin-left="15px">
-<img src="http://img.shields.io/static/v1?label=realize%20data&message=Setember&color=YELLOW&style=for-the-badge" />
-</P>
+![GitHub Org's stars](https://img.shields.io/github/stars/legatario?style=social)
