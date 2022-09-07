@@ -13,20 +13,22 @@ body{
     margin: 0 206px;
 }
 
-.header{
-    margin: 57px 0;
+.header, .footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 57px 0;
 }
 
-.header .img a{
+.header .img a, 
+footer .img a{
     display: flex;
     align-items: center;
     color: black;
 }
 
-.header .img img{
+.header .img img,
+footer .img img{
     max-width: 57px;
     padding-right: .5em;
 }
@@ -42,7 +44,9 @@ body{
     padding-left: 7em;
 }
 
-.header a{
+.header a,
+.footer a,
+.footer p{
     color: black;
     text-decoration: none;
     font-size: 14px;
@@ -51,10 +55,22 @@ body{
     line-height: 17px;
 }
 
-.header span{
+.header span,
+.footer span{
     font-size: 35px;
     font-weight: bold;
 }
+
+footer{
+    background: #1A1A1A;
+    height: 100%;
+}
+
+.footer span, 
+.footer p{
+    color: #fff;
+}
+
 
 #notify{
     margin-top: 5.5em
@@ -105,14 +121,14 @@ body{
     cursor: pointer;
 }
 
-.location, .info{
+.location, .info, .seg{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 7em;
 }
 
-.location h2, .info h2{
+.location h2, .info h2, .seg h2{
     font-size: 48px;
     font-family: Montserrat;
     font-weight: 700;
@@ -121,7 +137,7 @@ body{
     color: #1A1A1A;
 }
 
-.location p, .info p{
+.location p, .info p, .seg p{
     font-size: 30px;
     font-family: Montserrat;
     font-weight: 400;
@@ -145,7 +161,7 @@ body{
     width: 316px;
 }
 
-.info{
+.info, .seg{
     margin-top: 14.5em;
 }
 
@@ -155,15 +171,17 @@ body{
     width: 100%;
     align-items: stretch;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .blueCard{
     background: #0074FF;
     color: #fff;
     border: solid 1px #0074FF;
-    margin: 0px 7.5px;
+    margin: 7.5px 7.5px;
     width: 309px;
     height: auto;
+    min-height: 470px;
 }
 
 .blueCard h3{
@@ -180,4 +198,52 @@ body{
 .blueCardText{
     padding: 0px 0px 53px 22px;
     font-size: 14px;
+}
+
+.containerSegmento{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px 100px;
+    margin: 77px 100px 230px 100px;
+}
+
+.cardSegmento{
+    display: flex;
+}
+
+.cardImg{
+    margin-right: 17px;
+}
+
+.cardImg .img{
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    min-width: 57px;
+    min-height: 109px;
+    align-items: center;
+    display: flex;
+}
+
+.cardSegmento .text{
+    padding-top: 109px;
+}
+
+
+.cardSegmento .text h3{
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 30px;
+    color: black;
+}
+
+.cardSegmento .text p{
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 21px;
+    color: #595959;
+    padding-top: 15px;
 }
