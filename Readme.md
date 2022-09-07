@@ -3,6 +3,10 @@
 
 <h1 align="center"> TDX pixel perfect </h1>
 
+<P align="center">
 ![Badge Terminado](http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=GREEN&style=for-the-badge)
+</P>
 
+<P align="center" margin-left="15px">
 ![Badge Terminado](http://img.shields.io/static/v1?label=realize%20data&message=Setember&color=YELLOW&style=for-the-badge)
+</P>
