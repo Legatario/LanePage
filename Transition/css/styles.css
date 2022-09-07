@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #E5E5E5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat;
+}
+
+.container{
+    margin: 0 206px;
+}
+
+.header{
+    margin: 57px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .img a{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.header .img img{
+    max-width: 57px;
+    padding-right: .5em;
+}
+
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ul li{
+    list-style: none;
+    padding-left: 7em;
+}
+
+.header a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.header span{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#notify{
+    margin-top: 5.5em
+}
+
+.barrel{
+    display: flex;
+    /* align-items: center; */
+}
+
+.barrel img{
+    width: 65%;
+    max-height: 842.68px;
+    max-width: 1000px;
+}
+
+.notification{
+    width: 35%;
+    padding-right: 100px;
+}
+
+.notification h1{
+    margin-top: 1em;
+    font-size: 64px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 78px;
+    margin-bottom: .7em;
+    color: #1A1A1A;
+}
+
+.notification p{
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 43px;
+    margin-bottom: .7em;
+    color: #595959;
+}
+
+.notification button{
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 30px;
+    color: #0074FF;
+    padding: 22px 36px 21px 36px;
+    cursor: pointer;
+}
+
+.location, .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7em;
+}
+
+.location h2, .info h2{
+    font-size: 48px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 59px;
+    margin-bottom: 2em;
+    color: #1A1A1A;
+}
+
+.location p, .info p{
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 44px;
+    margin-bottom: 2.2em;
+    padding: 0 138px;
+    color: 
+    #595959;
+}
+
+.mapapouter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline{
+    margin-top: 3em;
+    height: 3px;
+    background: black;
+    width: 316px;
+}
+
+.info{
+    margin-top: 14.5em;
+}
+
+.cards{
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.blueCard{
+    background: #0074FF;
+    color: #fff;
+    border: solid 1px #0074FF;
+    margin: 0px 7.5px;
+    width: 309px;
+    height: auto;
+}
+
+.blueCard h3{
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 44px;
+    padding: 105px 46px 70px;
+}
+
+.blueCard ul{
+    padding-left: 16px;
+}
+.blueCardText{
+    padding: 0px 0px 53px 22px;
+    font-size: 14px;
+}
