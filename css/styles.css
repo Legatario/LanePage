@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body{
     background-color: #E5E5E5;
     font-family: Arial, Helvetica, sans-serif;
@@ -425,6 +429,9 @@ footer{
         margin: 77px 100px 230px 100px;
         
     }
+    .underline{
+        max-width: 50%;
+    }
 }
 
 @media (max-width: 500px){
@@ -435,6 +442,9 @@ footer{
     }
     .footer{
         display: block;
+    }
+    .notification button{
+        padding: 10px;
     }
 }
 
