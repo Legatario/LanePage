@@ -432,12 +432,15 @@ footer{
     .underline{
         max-width: 50%;
     }
+    .notification p, .location p, .info p, .seg p{
+        padding: 0;
+    }
 }
 
 @media (max-width: 500px){
     .containerSegmento{
         grid-template-columns: 1fr;
-        margin: 77px 30px 230px 30px;
+        margin: 77px 10px 230px 10px;
         
     }
     .footer{
@@ -445,6 +448,14 @@ footer{
     }
     .notification button{
         padding: 10px;
+    }
+    .notification{
+        width: 60%;
+        padding-right: 50px;
+    }
+    .header .img a{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
